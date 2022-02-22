@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/audio_card_background"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/audioTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="202032331-9000"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/audioTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/audioTitle"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:text="2002/01/01"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/audioDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/audioTime"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/audioPlay"
+        android:text="00:00:00"/>
+
+
+    <ImageView
+        android:id="@+id/audioPlay"
+        android:contentDescription="@string/control_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/audioTime"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/play"/>
+
+
+</RelativeLayout>

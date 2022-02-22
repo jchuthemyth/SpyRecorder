@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aw="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/start_color">
+
+    <RelativeLayout
+        android:id="@+id/recorder_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/recorder_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recording.."
+            android:textColor="@color/start_color"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+    <org.firezenk.audiowaves.Visualizer
+        android:id="@+id/recorder_wave"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/recorder_header"
+        android:layout_marginTop="60dp"
+        aw:aw_format="vertical_lines"
+        aw:aw_gravity="center"
+        aw:aw_width="100"
+        aw:aw_height="200"
+        aw:aw_num_waves="10"
+        aw:aw_line_with="30"
+        aw:aw_line_min_with="30"
+        aw:aw_line_height="30"
+        aw:aw_line_min_height="30"
+        aw:aw_line_spacing="10"
+        aw:aw_line_border_radius="50"
+        aw:aw_ball_diameter="30"
+        aw:aw_color_uniform="@color/black"
+        aw:aw_color_is_gradient="true"
+        aw:aw_color_gradient_start="@color/white"
+        aw:aw_color_gradient_end="@color/start_color"/>
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recorder_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="48sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/recorder_wave"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/recorder_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/stop"
+        tools:ignore="UsingOnClickInXml" />
+
+
+</RelativeLayout>

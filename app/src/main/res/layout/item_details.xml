@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/audio_card_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/details_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details :"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/start_color"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/details_title_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title : "
+            android:textColor="@color/start_color"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="35dp"
+            android:layout_below="@+id/details_header"/>
+
+        <TextView
+            android:id="@+id/details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/details_title_holder"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@+id/details_title_holder"
+            android:text="202930293 - 9090"
+            android:textColor="@color/start_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/details_date_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date : "
+            android:textColor="@color/start_color"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="35dp"
+            android:layout_below="@+id/details_title_holder"/>
+
+        <TextView
+            android:id="@+id/details_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/details_date_holder"
+            android:layout_alignBottom="@+id/details_date_holder"
+            android:layout_alignStart="@+id/details_title"
+            android:text="2020-12-19"
+            android:textColor="@color/start_color"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/details_size_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size : "
+            android:textColor="@color/start_color"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="35dp"
+            android:layout_below="@+id/details_date_holder"/>
+
+        <TextView
+            android:id="@+id/details_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/details_title"
+            android:layout_alignBottom="@+id/details_size_holder"
+            android:layout_toEndOf="@+id/details_size_holder"
+            android:text="44.68MB"
+            android:textColor="@color/start_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/details_path_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Path : "
+            android:textColor="@color/start_color"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="35dp"
+            android:layout_below="@+id/details_size_holder"/>
+
+        <TextView
+            android:id="@+id/details_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/details_title"
+            android:layout_alignTop="@+id/details_path_holder"
+            android:layout_toEndOf="@+id/details_path_holder"
+            android:layout_marginEnd="35dp"
+            android:text="0/emulated/file/anything.mp3"
+            android:textColor="@color/start_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/details_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_path"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="CLOSE"
+            android:textColor="@color/start_color"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
